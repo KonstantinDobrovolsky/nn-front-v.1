@@ -1,0 +1,10 @@
+.blueCounter {
+    justify-content: center;
+    align-items: center;
+}
+
+.blueScore {
+    color: var(--main_hard);
+    font-size: 250%;
+    padding: 10px;
+}

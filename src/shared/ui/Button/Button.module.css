@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    font-size: large;
+    border: 1px solid rgb(var(--main_light));
+    border-radius: 20px / 50%;
+    color: rgb(var(--main_light));
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(var(--base));
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    /* filter: invert(0.2); */
+    font-weight: bold;
+}
+
+.btn:active {
+    filter: invert(0.1);
+}

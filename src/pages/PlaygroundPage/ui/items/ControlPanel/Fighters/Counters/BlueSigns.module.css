@@ -1,0 +1,17 @@
+.signs {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 10vh;
+}
+
+.blueSign {
+    color: var(--main_hard);
+    border: 2px solid rgb(var(--main_light));
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 150%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--base));
+}

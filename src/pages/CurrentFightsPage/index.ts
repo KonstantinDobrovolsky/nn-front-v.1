@@ -1,0 +1,1 @@
+export { CurrentFightsPage } from './ui/CurrentFightsPage';

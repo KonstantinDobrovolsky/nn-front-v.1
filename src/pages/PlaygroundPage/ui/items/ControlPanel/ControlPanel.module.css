@@ -1,0 +1,6 @@
+.controlPanel {
+    height: 12vh;
+    background-color: rgb(var(--main_light), 0.4);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}

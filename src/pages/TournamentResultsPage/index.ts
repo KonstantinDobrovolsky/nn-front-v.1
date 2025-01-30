@@ -1,0 +1,1 @@
+export { TournamentResultsPage } from './ui/TournamentResultsPage';

@@ -1,0 +1,10 @@
+.redCounter {
+    justify-content: center;
+    align-items: center;
+}
+
+.redScore {
+    color: var(--secondary);
+    font-size: 250%;
+    padding: 10px;
+}

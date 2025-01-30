@@ -1,0 +1,11 @@
+.main.cyberpunk {
+    --base: black;
+
+    --main_light: rgb(115, 245, 253);
+
+    --secondary: rgb(255, 97, 89);
+
+    --support: rgb( 222, 255, 93);
+
+    --green: rgb(29,236, 131);
+}

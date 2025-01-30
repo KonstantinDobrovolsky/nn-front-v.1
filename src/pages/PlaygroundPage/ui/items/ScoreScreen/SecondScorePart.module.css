@@ -1,0 +1,12 @@
+.secondScorePart {
+    width: 50%;
+    height: 100%;
+    background-color: var(--secondary);
+    border-top-right-radius: 40px;
+}
+
+.score {
+    color: rgb(var(--base));
+    font-size: 2000%;
+    margin: 30vh auto;
+}

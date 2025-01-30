@@ -1,0 +1,1 @@
+export { LongswordRatingPage } from './ui/LongswordRatingPage';

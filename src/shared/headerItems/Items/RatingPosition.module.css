@@ -1,0 +1,7 @@
+.ratingPosition {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background-color: transparent;
+}

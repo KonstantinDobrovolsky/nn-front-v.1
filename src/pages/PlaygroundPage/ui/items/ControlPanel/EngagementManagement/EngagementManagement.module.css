@@ -1,0 +1,21 @@
+.engagementManagement {
+    height: 10%;
+    padding: 1%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.getFight {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    font-weight: lighter;
+    align-items: center;
+}
+
+.finishFight {
+    background-color: var(--support);
+    color: rgb(var(--base));
+    border: 0px;
+    font-weight: lighter;
+    align-items: center;
+}

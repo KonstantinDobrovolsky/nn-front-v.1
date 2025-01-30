@@ -1,0 +1,15 @@
+.timer {
+    box-sizing: border-box;
+    background-color: rgb(var(--base), 0.7);
+    width: 20%;
+    color: var(--main_hard);
+    /* font-size: 600%; */
+    font-size: 7vw;
+    padding: 4%;
+    position: absolute;
+    bottom: 3%;
+    left: 40%;
+    align-items: center;
+    border-radius: 20% / 50%;
+    justify-content: center;
+ }

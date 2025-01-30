@@ -1,0 +1,1 @@
+export { TournamentSettingsPage } from './ui/TournamentSettingsPage';
