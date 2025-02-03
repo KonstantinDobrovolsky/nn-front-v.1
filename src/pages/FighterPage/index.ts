@@ -1,1 +1,0 @@
-export { FighterPage } from './ui/FighterPage';
