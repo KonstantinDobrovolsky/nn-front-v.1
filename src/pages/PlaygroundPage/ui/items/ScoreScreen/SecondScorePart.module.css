@@ -1,7 +1,7 @@
 .secondScorePart {
     width: 50%;
     height: 100%;
-    background-color: var(--secondary);
+    background-color: rgb(var(--secondary));
     border-top-right-radius: 40px;
 }
 

@@ -4,7 +4,7 @@
 }
 
 .redScore {
-    color: var(--secondary);
+    color: rgb(var(--secondary));
     font-size: 250%;
     padding: 10px;
 }

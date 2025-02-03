@@ -1,6 +1,5 @@
 import ScoreScreen from "./items/ScoreScreen/ScoreScreen";
 import ControlPanel from "./items/ControlPanel/ControlPanel";
-import classes from './PlaygroundPage.module.css';
 import EngagementManagement from "./items/ControlPanel/EngagementManagement/EngagementManagement";
 import { useEffect, useState } from "react";
 
@@ -38,7 +37,7 @@ export const PlaygroundPage = () => {
     }
 
     return (
-        <div className={classes.playgroundPage}>
+        <div>
             <ScoreScreen blueScore={blueScore} redScore={redScore} blueName={blueName} redName={redName}/>
             <ControlPanel blueScore={blueScore} redScore={redScore} setBlueScore={setBlueScore} setRedScore={setRedScore} blueName={blueName} redName={redName}/>
             <EngagementManagement blueScore={blueScore} redScore={redScore} blueName={blueName} redName={redName}/>

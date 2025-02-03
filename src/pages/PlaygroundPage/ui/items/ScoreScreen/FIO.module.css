@@ -1,5 +1,5 @@
 .fio {
-    color: var(--main_hard);
+    color: rgb(var(--main_hard));
     width: 100%;
     height: 20%;
     font-size: 300%;

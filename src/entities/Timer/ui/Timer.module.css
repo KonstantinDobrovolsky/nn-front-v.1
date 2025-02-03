@@ -2,8 +2,7 @@
     box-sizing: border-box;
     background-color: rgb(var(--base), 0.7);
     width: 20%;
-    color: var(--main_hard);
-    /* font-size: 600%; */
+    color: rgb(var(--main_hard));
     font-size: 7vw;
     padding: 4%;
     position: absolute;

@@ -1,7 +1,7 @@
 .clues {
     background-color: rgb(var(--base), 0.7);
-    color: var(--main_hard);
-    border: 1px solid var(--main_hard);
+    color: rgb(var(--main_hard));
+    border: 1px solid rgb(var(--main_hard));
     border-radius: 50%;
     position: absolute;
     font-size: 200%;

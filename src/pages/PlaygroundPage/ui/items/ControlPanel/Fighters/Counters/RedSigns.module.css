@@ -6,8 +6,8 @@
 
 .redSign {
     color: var(--main_hard);
-    border: 2px solid var(--secondary);
-    color: var(--secondary);
+    border: 2px solid rgb(var(--secondary));
+    color: rgb(var(--secondary));
     border-radius: 50%;
     width: 30px;
     height: 30px;
