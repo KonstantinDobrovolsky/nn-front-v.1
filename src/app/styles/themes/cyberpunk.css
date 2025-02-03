@@ -1,11 +1,19 @@
 .main.cyberpunk {
-    --base: black;
+    --base: 0, 0, 0;
+    --demo: rgb(0, 0, 0);
 
-    --main_light: rgb(115, 245, 253);
+    --main_light: 115, 245, 253;
+    --demo: rgb(115, 245, 253);
 
-    --secondary: rgb(255, 97, 89);
+    --secondary: 255, 97, 89;
+    --demo: rgb(255, 97, 89);
 
-    --support: rgb( 222, 255, 93);
+    --support: 222, 255, 93;
+    --demo: rgb(222, 255, 93);
 
-    --green: rgb(29,236, 131);
+    --main_medium: 29,236, 131;
+    --demo: rgb(29,236, 131);
+
+    --main_hard: 27, 44, 76;
+    --demo: rgb(27, 44, 76);
 }
