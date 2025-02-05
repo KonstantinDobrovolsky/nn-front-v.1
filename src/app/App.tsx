@@ -4,7 +4,7 @@ import { AppRouter } from "app/providers/appRouter";
 
 function App() {
   return (
-    <div className="main light">
+    <div className="main cyberpunk">
 
     <div>
       <Link className="link" to={'/playground'}>Площадка</Link>

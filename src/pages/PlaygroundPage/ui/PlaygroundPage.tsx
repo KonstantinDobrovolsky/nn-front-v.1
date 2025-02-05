@@ -37,7 +37,7 @@ export const PlaygroundPage = () => {
     }
 
     return (
-        <div>
+        <div style={{backgroundColor: "rgb(var(--base))"}}>
             <ScoreScreen blueScore={blueScore} redScore={redScore} blueName={blueName} redName={redName}/>
             <ControlPanel blueScore={blueScore} redScore={redScore} setBlueScore={setBlueScore} setRedScore={setRedScore} blueName={blueName} redName={redName}/>
             <EngagementManagement blueScore={blueScore} redScore={redScore} blueName={blueName} redName={redName}/>

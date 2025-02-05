@@ -11,7 +11,8 @@
 .modalContent {
     padding: 25px;
     background: rgb(var(--base));
-    color: rgb(var(--main_hard));
+    color: rgb(var(--main_light));
+    border: 1px solid rgb(var(--main_light));
     border-radius: 16px;
     min-width: 250px;
 }

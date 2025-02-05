@@ -5,9 +5,10 @@
 @import './fonts/fonts.css';
 
 .main {
+    background-color: rgb(var(--base));
     box-sizing: border-box;
     font: var(--font-m);
-    margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
     font-family: 'Ubuntu-Regular';
 }

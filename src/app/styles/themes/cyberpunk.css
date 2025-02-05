@@ -1,19 +1,19 @@
 .main.cyberpunk {
-    --base: 0, 0, 0;
-    --demo: rgb(0, 0, 0);
+    --base: 33, 27, 27;
+    --demo: rgb(33, 27, 27);
 
-    --main_light: 115, 245, 253;
-    --demo: rgb(115, 245, 253);
+    --main_light: 26, 214, 119;
+    --demo: rgb(26, 214, 119);
 
-    --secondary: 255, 97, 89;
-    --demo: rgb(255, 97, 89);
+    /* --main_medium: 29,236, 131;
+    --demo: rgb(29,236, 131); */
 
-    --support: 222, 255, 93;
-    --demo: rgb(222, 255, 93);
+    --main_hard: 16, 13, 13;
+    --demo: rgb(16, 13, 13);
 
-    --main_medium: 29,236, 131;
-    --demo: rgb(29,236, 131);
+    --secondary: 187, 243, 89;
+    --demo: rgb(187, 243, 89);
 
-    --main_hard: 27, 44, 76;
-    --demo: rgb(27, 44, 76);
+    --support: 154, 112, 255;
+    --demo: rgb(154, 112, 255);
 }

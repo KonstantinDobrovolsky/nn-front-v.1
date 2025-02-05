@@ -5,7 +5,7 @@
 }
 
 .blueSign {
-    color: rgb(var(--main_hard));
+    color: rgb(var(--main_light));
     border: 2px solid rgb(var(--main_light));
     border-radius: 50%;
     width: 30px;

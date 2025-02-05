@@ -4,7 +4,7 @@
 }
 
 .blueScore {
-    color: rgb(var(--main_hard));
+    color: rgb(var(--main_light));
     font-size: 250%;
     padding: 10px;
 }

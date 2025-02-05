@@ -6,16 +6,17 @@
 }
 
 .getFight {
-    border: 1px solid rgb(var(--secondary));
-    color: rgb(var(--secondary));
+    background-color: rgb(var(--base));
+    border: 1px solid rgb(var(--main_light));
+    color: rgb(var(--main_light));
     font-weight: lighter;
     align-items: center;
 }
 
 .finishFight {
-    background-color: rgb(var(--support));
-    color: rgb(var(--base));
-    border: 0px;
+    background-color: rgb(var(--base));
+    border: 1px solid rgb(var(--main_light));
+    color: rgb(var(--main_light));
     font-weight: lighter;
     align-items: center;
 }
