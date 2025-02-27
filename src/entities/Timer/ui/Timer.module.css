@@ -1,7 +1,8 @@
 .timer {
     box-sizing: border-box;
-    background-color: rgb(var(--base), 0.7);
+    background-color: rgb(var(--base), 0.5);
     /* background-color: rgb(255, 255, 255, 0.7); */
+    /* border: 1px solid rgb(var(--base)); */
     width: 20%;
     color: rgb(var(--main_hard));
     font-size: 7vw;

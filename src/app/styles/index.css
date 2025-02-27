@@ -4,30 +4,14 @@
 @import './themes/light.css';
 @import './fonts/fonts.css';
 
-.main {
+
+.app {
     background-color: rgb(var(--base));
     box-sizing: border-box;
     font: var(--font-m);
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     font-family: 'Ubuntu-Regular';
-}
-
-h1, h3 {
-    text-align: center;
-    margin: 20px auto;
-}
-
-.link {
-    display: inline-block;
-    color: rgb(var(--main_light));
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid rgb(var(--main_light));
-    border-radius: 20px / 50%;
 }
 
 .flex {
