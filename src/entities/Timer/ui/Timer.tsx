@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import classes from './Timer.module.css';
 
 export const Timer = () => {
+    const [zero, setZero] = useState(1);
     const [first, setFirst] = useState(0);
     const [second, setSecond] = useState(0);
     const [third, setThird] = useState(2);
@@ -12,7 +13,7 @@ export const Timer = () => {
         document.addEventListener('keydown', handleKeyDown);
 
         if (timerIsOn && (first > 0 || second > 0 || third > 0 || fourth > 0)){
-            setTimeout(() => (decreaseFirst()), 1000)
+            setTimeout(() => (decreaseZero()), 250)
         } else {
             setTimerIsOn(false);
         }
@@ -21,7 +22,7 @@ export const Timer = () => {
             document.removeEventListener('keydown', handleKeyDown);
         }
 
-    }, [first, second, third, fourth, timerIsOn])
+    }, [zero, first, second, third, fourth, timerIsOn])
 
     const handleKeyDown = (e: any) => {
         const code = e.code;
@@ -62,6 +63,16 @@ export const Timer = () => {
             {
                 setThird(0)
                 if (fourth < 9) setFourth(fourth + 1)
+            }
+    }
+
+    function decreaseZero(){
+        console.log(zero)
+        if (zero >= 0.5) setZero(zero - 0.25)
+        else
+            {
+                setZero(1)
+                decreaseFirst()
             }
     }
 
