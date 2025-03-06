@@ -1,7 +1,12 @@
 import classes from './BlueCounter.module.css';
 import BlueSigns from './BlueSigns';
 
-const BlueCounter = ({blueScore, setBlueScore} : {blueScore: number, setBlueScore: Function}) => {
+interface Props {
+    blueScore: number,
+    setBlueScore: Function
+}
+
+const BlueCounter = ({blueScore, setBlueScore} : Props) => {
 
     return (
         <div className={`${classes.blueCounter} flex`}>

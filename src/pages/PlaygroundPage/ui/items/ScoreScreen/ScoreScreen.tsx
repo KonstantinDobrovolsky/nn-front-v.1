@@ -4,7 +4,14 @@ import classes from './ScoreScreen.module.css';
 import Clues from './Clues';
 import { Timer } from 'entities/Timer';
 
-const ScoreScreen = ({blueScore, redScore, blueName, redName} : {blueScore: number, redScore: number, blueName: string, redName: string}) => {
+interface Props {
+    blueScore: number,
+    redScore: number,
+    blueName: string,
+    redName: string
+}
+
+const ScoreScreen = ({blueScore, redScore, blueName, redName} : Props) => {
     return (
         <div>
             <div className={`${classes.scoreScreen} flex`}>

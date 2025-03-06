@@ -1,7 +1,12 @@
 import FIO from './FIO';
 import classes from './SecondScorePart.module.css';
 
-const SecordScorePart = ({score, name} : {score: number, name: string}) => {
+interface Props {
+    score : number,
+    name: string
+}
+
+const SecordScorePart = ({score, name} : Props) => {
     return (
         <div className={classes.secondScorePart}>
             <FIO fio={name}/>

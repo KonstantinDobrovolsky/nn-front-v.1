@@ -4,8 +4,16 @@ import RedCounter from './Counters/RedCounter';
 import BlueInput from './BlueInput';
 import RedInput from './RedInput';
 
-const Fighters = ({blueScore, redScore, setBlueScore, setRedScore, blueName, redName}
-    : {blueScore: number, redScore: number, setBlueScore: Function, setRedScore: Function, blueName: string, redName: string}) => {
+interface Props {
+    blueScore: number,
+    redScore: number,
+    setBlueScore: Function,
+    setRedScore: Function,
+    blueName: string,
+    redName: string
+}
+
+const Fighters = ({blueScore, redScore, setBlueScore, setRedScore, blueName, redName} : Props) => {
     return (
         <div className={`${classes.fighters} flex`}>
             <div className={`${classes.left} flex`}>

@@ -3,7 +3,14 @@ import classes from './EngagementManagement.module.css'
 import { useState } from 'react';
 import Modal from './Modal';
 
-const EngagementManagement = ({blueScore, redScore, blueName, redName} : {blueScore: number, redScore: number, blueName: string, redName: string}) => {
+interface Props {
+    blueScore: number,
+    redScore: number,
+    blueName: string,
+    redName: string
+}
+
+const EngagementManagement = ({blueScore, redScore, blueName, redName} : Props) => {
     const [finishModal, setFinishModal] = useState<boolean>(false)
 
     const finish = () => {
