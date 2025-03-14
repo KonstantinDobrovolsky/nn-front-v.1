@@ -1,19 +1,11 @@
 import classes from './ControlPanel.module.css';
 import Fighters from './Fighters/Fighters';
+import { IFightersPair } from 'app/types/Types';
 
-interface Props {
-    blueScore: number,
-    redScore: number,
-    setBlueScore: Function,
-    setRedScore: Function,
-    blueName: string,
-    redName: string
-}
-
-const ControlPanel = ({blueScore, redScore, setBlueScore, setRedScore, blueName, redName} : Props) => {
+const ControlPanel = ({firstFighter, secondFighter} : IFightersPair) => {
     return (
         <div className={`${classes.controlPanel} flex`}>
-            <Fighters blueScore={blueScore} redScore={redScore} setBlueScore={setBlueScore} setRedScore={setRedScore} blueName={blueName} redName={redName}/>
+            <Fighters firstFighter={firstFighter} secondFighter={secondFighter}/>
         </div>
     );
 }

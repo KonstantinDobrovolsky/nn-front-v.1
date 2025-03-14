@@ -1,18 +1,14 @@
+import { IFighter } from 'app/types/Types';
 import classes from './RedCounter.module.css';
 import RedSigns from './RedSigns';
 
-interface Props {
-    redScore: number,
-    setRedScore: Function
-}
-
-const RedCounter = ({redScore, setRedScore} : Props) => {
+const RedCounter = ({fighter} : IFighter) => {
     return (
         <div className={`${classes.redCounter} flex`}>
             <div className={classes.redScore}>
-                {redScore}
+                {fighter.score}
             </div>
-            <RedSigns redScore={redScore} setRedScore={setRedScore}/>
+            <RedSigns fighter={fighter}/>
         </div>
     );
 }

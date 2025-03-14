@@ -1,15 +1,8 @@
 import Button from 'shared/ui/Button/Button';
 import classes from './Modal.module.css';
+import { IModal } from 'app/types/Types';
 
-interface Props {
-    message: string,
-    visible: boolean,
-    setVisible: Function,
-    confirm: Function,
-    decline: Function
-}
-
-const Modal = ({message, visible, setVisible, confirm, decline}: Props) => {
+const Modal = ({message, visible, setVisible, confirm, decline}: IModal) => {
     const rootClasses = [classes.modal];
     if (visible){
         rootClasses.push(classes.active);

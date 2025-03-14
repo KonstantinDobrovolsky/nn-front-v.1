@@ -1,17 +1,13 @@
 import FIO from './FIO';
 import classes from './SecondScorePart.module.css';
+import { IFighter } from 'app/types/Types';
 
-interface Props {
-    score : number,
-    name: string
-}
-
-const SecordScorePart = ({score, name} : Props) => {
+const SecordScorePart = ({fighter} : IFighter) => {
     return (
         <div className={classes.secondScorePart}>
-            <FIO fio={name}/>
+            <FIO name={fighter.name}/>
             <div className={classes.score}>
-                {score}
+                {fighter.score}
             </div>
         </div>
     );
