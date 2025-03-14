@@ -2,19 +2,13 @@ import Button from 'shared/ui/Button/Button';
 import classes from './EngagementManagement.module.css'
 import { useState } from 'react';
 import Modal from './Modal';
+import { IFightersPair } from 'app/types/Types';
 
-interface Props {
-    blueScore: number,
-    redScore: number,
-    blueName: string,
-    redName: string
-}
-
-const EngagementManagement = ({blueScore, redScore, blueName, redName} : Props) => {
+const EngagementManagement = ({firstFighter, secondFighter} : IFightersPair) => {
     const [finishModal, setFinishModal] = useState<boolean>(false)
 
     const finish = () => {
-        if (blueScore > 0 || redScore > 0 || blueName != "" || redName != "")
+        if (firstFighter.score > 0 || secondFighter.score > 0 || firstFighter.name != "" || secondFighter.name != "")
             setFinishModal(true)
     }
     return (

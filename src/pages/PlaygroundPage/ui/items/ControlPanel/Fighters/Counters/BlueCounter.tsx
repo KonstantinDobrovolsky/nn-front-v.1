@@ -1,18 +1,13 @@
 import classes from './BlueCounter.module.css';
 import BlueSigns from './BlueSigns';
+import { IFighter } from 'app/types/Types';
 
-interface Props {
-    blueScore: number,
-    setBlueScore: Function
-}
-
-const BlueCounter = ({blueScore, setBlueScore} : Props) => {
-
+const BlueCounter = ({fighter} : IFighter) => {
     return (
         <div className={`${classes.blueCounter} flex`}>
-            <BlueSigns blueScore={blueScore}  setBlueScore={setBlueScore}/>
+            <BlueSigns fighter={fighter}/>
             <div className={classes.blueScore}>
-                {blueScore}
+                {fighter.score}
             </div>
         </div>
     );

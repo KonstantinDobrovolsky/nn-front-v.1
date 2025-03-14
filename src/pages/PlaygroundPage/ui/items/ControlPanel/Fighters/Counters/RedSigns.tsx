@@ -1,16 +1,12 @@
 import Button from "shared/ui/Button/Button";
 import classes from './RedSigns.module.css';
+import { IFighter } from "app/types/Types";
 
-interface Props {
-    redScore: number,
-    setRedScore: Function
-}
-
-const RedSigns = ({redScore, setRedScore} : Props) => {
+const RedSigns = ({fighter} : IFighter) => {
     return (
         <div className={`${classes.signs} flex`}>
-            <Button name='+' inheritClasses={classes.redSign} onClick={() => (setRedScore(redScore + 1))}/>
-            <Button name='-' inheritClasses={classes.redSign} onClick={() => (setRedScore(redScore - 1))}/>
+            <Button name='+' inheritClasses={classes.redSign} onClick={() => (fighter.setScore(fighter.score + 1))}/>
+            <Button name='-' inheritClasses={classes.redSign} onClick={() => (fighter.setScore(fighter.score - 1))}/>
         </div>
     );
 }
