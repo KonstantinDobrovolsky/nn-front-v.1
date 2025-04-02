@@ -1,14 +1,12 @@
 import { CurrentFightsPage } from "pages/CurrentFightsPage"
 import { PlaygroundPage } from "pages/PlaygroundPage"
 import { TournamentResultsPage } from "pages/TournamentResultsPage"
-import { TournamentSettingsPage } from "pages/TournamentSettingsPage"
 import { Navigate, RouteProps } from "react-router-dom"
 
 enum AppRoutes {
     PLAYGROUND = 'playground',
     CURRENT_FIGHTS = 'currentFights',
     TOURNAMENT_RESULTS = 'tournamentResults',
-    TOURNAMENT_SETTINGS = 'tournamentSettings',
     UNDEFINED = '*'
 }
 
@@ -16,7 +14,6 @@ const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.PLAYGROUND]: '/playground',
     [AppRoutes.CURRENT_FIGHTS]: '/currentFights',
     [AppRoutes.TOURNAMENT_RESULTS]: '/tournamentResults',
-    [AppRoutes.TOURNAMENT_SETTINGS]: '/tournamentSettings',
     [AppRoutes.UNDEFINED]: '*'
 }
 
@@ -32,10 +29,6 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.TOURNAMENT_RESULTS]: {
         path: RoutePath[AppRoutes.TOURNAMENT_RESULTS],
         element: <TournamentResultsPage/>
-    },
-    [AppRoutes.TOURNAMENT_SETTINGS]: {
-        path: RoutePath[AppRoutes.TOURNAMENT_SETTINGS],
-        element: <TournamentSettingsPage/>
     },
     [AppRoutes.UNDEFINED]: {
         path: RoutePath[AppRoutes.UNDEFINED],

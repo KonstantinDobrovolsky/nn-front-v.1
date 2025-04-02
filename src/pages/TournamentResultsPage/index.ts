@@ -1,1 +1,1 @@
-export { TournamentResultsPage } from './ui/TournamentResultsPage';
+export { TournamentResultsPageAsync as TournamentResultsPage } from './ui/TournamentResultsPage.async';

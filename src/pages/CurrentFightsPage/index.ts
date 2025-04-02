@@ -1,1 +1,1 @@
-export { CurrentFightsPage } from './ui/CurrentFightsPage';
+export { CurrentFightsPageAsync as CurrentFightsPage } from './ui/CurrentFightsPage.async';

@@ -1,1 +1,1 @@
-export { PlaygroundPage } from './ui/PlaygroundPage';
+export { PlaygroundPageAsync as PlaygroundPage } from './ui/PlaygroundPage.async';
