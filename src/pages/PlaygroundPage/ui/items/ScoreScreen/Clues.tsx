@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classes from './Clues.module.css';
 
-const Clues = ({infoText, children} : any) => {
+const Clues = ({infoText} : any) => {
     const [showTooltip, setShowTooltip] = useState(false)
 
     return (
