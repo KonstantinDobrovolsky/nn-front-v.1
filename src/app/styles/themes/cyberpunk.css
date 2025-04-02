@@ -11,7 +11,9 @@
     --main_hard: 16, 13, 13;
     --demo: rgb(16, 13, 13);
 
-    --secondary: 187, 243, 89;
+    --secondary: 225, 243, 89;
+    --tmp: rgb(225, 243, 89);
+    /* --secondary: 187, 243, 89; */
     --demo: rgb(187, 243, 89);
 
     --support: 154, 112, 255;

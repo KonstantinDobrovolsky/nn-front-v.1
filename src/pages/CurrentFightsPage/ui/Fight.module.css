@@ -1,0 +1,14 @@
+.fight {
+    color: rgb(var(--main_light));
+    margin: 10px;
+    border: 2px solid rgb(var(--main_light));
+    padding: 20px;
+    width: 40vw;
+}
+
+.element {
+    padding: 10px;
+    justify-content: center;
+    width: 50%;
+    font-size: 150%;
+}

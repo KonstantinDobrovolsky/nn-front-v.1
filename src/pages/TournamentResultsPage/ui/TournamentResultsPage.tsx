@@ -1,7 +1,9 @@
+import TournamentSearch from "shared/ui/TournamentSearch/TournamentSearch";
+
 export const TournamentResultsPage = () => {
     return (
         <div>
-            Tournament results
+            <TournamentSearch/>
         </div>
     );
 }

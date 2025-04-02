@@ -1,10 +1,21 @@
+import { useState } from 'react';
 import classes from './Clues.module.css';
 
-const Clues = () => {
+const Clues = ({infoText, children} : any) => {
+    const [showTooltip, setShowTooltip] = useState(false)
+
     return (
-        <div className={`${classes.clues} flex`}>
-            ?
+        <div>
+            <div className={`${classes.clues} flex`}
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}>
+                ?
+            </div>
+            <div style={{ whiteSpace: 'pre-line' }} className={`${classes.tooltip} ${showTooltip ? classes.open : ""}`}>
+                {infoText}
+            </div>
         </div>
+
     );
 }
 

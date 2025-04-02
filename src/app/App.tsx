@@ -15,10 +15,9 @@ function App() {
         <div className={classes.links}>
           <Link className={classes.link} to={'/playground'}>Площадка</Link>
           <Link className={classes.link} to={'/currentFights'}>Список боев</Link>
-          <Link className={classes.link} to={'/tournamentResults'}>Итоги</Link>
-          <Link className={classes.link} to={'/tournamentSettings'}>Управление турниром</Link>
+          {/* <Link className={classes.link} to={'/tournamentResults'}>Итоги</Link> */}
         </div>
-        <Button name="" inheritClasses={classes.themeToggle} onClick={switchTheme}/>
+        <Button name="Сменить тему" inheritClasses={classes.themeToggle} onClick={switchTheme}/>
       </div>
 
       <AppRouter/>

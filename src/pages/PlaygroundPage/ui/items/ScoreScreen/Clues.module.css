@@ -11,4 +11,22 @@
     right: 2vh;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.tooltip {
+    background-color: rgb(var(--base));
+    border: 1px solid rgb(var(--main_light));
+    color: rgb(var(--main_light));
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    bottom: 12vh;
+    right: 2vh;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.tooltip.open {
+    opacity: 1;
 }
