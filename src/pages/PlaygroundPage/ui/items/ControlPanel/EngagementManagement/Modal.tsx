@@ -8,18 +8,13 @@ const Modal = ({message, visible, setVisible, confirm, decline}: IModal) => {
         rootClasses.push(classes.active);
     }
 
-    const sendData = () => {
-        console.log("Data send")
-        setVisible(false)
-    }
-
     return (
         <div className={rootClasses.join(' ')} onClick={() => setVisible(false)}>
             <div className={classes.modalContent} onClick={(e) => e.stopPropagation()}>
                 {message}
                 <div className={`${classes.form} flex`}>
-                    <Button name={"Отмена"} inheritClasses='' onClick={() => (setVisible(false))}/>
-                    <Button name={"Отправить"} inheritClasses='' onClick={sendData}/>
+                    <Button name={"Отмена"} inheritClasses='' onClick={decline}/>
+                    <Button name={"Подтвердить"} inheritClasses='' onClick={confirm}/>
                 </div>
             </div>
         </div>
