@@ -12,10 +12,10 @@ const ScoreScreen = ({firstFighter, secondFighter} : IFightersPair) => {
                 <FirstScorePart fighter={firstFighter}/>
                 <SecondScorePart fighter={secondFighter}/>
                 <Timer/>
-                <Clues infoText="W - плюс балл левому, Qww - минус балл левому
+                <Clues infoText="W - плюс балл левому, Q - минус балл левому
                 P - плюс балл правому, O - минус балл правому
                 пробел - запустить/остановить таймер
-               '+' добавить 1 секунду, '-' убрать 1 секунду"/>
+               '+' добавить 1 секунду, '-' вычесть 1 секунду"/>
             </div>
         </div>
     );
